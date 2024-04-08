@@ -44,7 +44,7 @@ def path_contents(contents, path_list):
                     new_contents = []
                     new_contents.append(item)
     
-    if len(new_contents) <0:
+    if len(new_contents) <= 0:
         return
     if len(path_list) > 1:
         new_contents[0]['name'] = path
