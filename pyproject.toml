@@ -1,0 +1,7 @@
+[project]
+name = "pyls"
+version = "1.0.0"
+
+[project.scripts]
+pyls = "pyls.__main__:main"
+
