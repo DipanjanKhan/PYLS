@@ -44,3 +44,10 @@ For example:
 ```bash
     pyls -l -r -t --filter=file
 ```
+Output:
+```bash
+-rw-r--r-- 74    Nov 14 13:57 main.go
+drwxr-xr-x 60    Nov 14 13:51 go.mod
+drwxr-xr-x 83    Nov 14 11:27 README.md
+drwxr-xr-x 1.0K  Nov 14 11:27 LICENSE
+```

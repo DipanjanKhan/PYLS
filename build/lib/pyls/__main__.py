@@ -3,12 +3,12 @@ import json
 from datetime import datetime
 
 
-def calDateTime(value):
+def cal_date_time(value):
     obj = datetime.utcfromtimestamp(value)
     date_time = obj.strftime('%b %d %H:%M')
     return date_time
 
-def calSize(size):
+def cal_size(size):
     if size>1023:
         size_kb = size/1024.0
         if size_kb>1023:
@@ -21,11 +21,11 @@ def calSize(size):
         return size
     
 
-def printDetails(data):
+def print_details(data):
     
     for item in data:
-        date_time = calDateTime(item['time_modified'])
-        size = calSize(item['size'])
+        date_time = cal_date_time(item['time_modified'])
+        size = cal_size(item['size'])
         print(f"{item['permissions']: <11}{size: <6}{date_time: <13}{item['name']}")
 
 
@@ -101,7 +101,7 @@ def main():
             contents = reversed(contents)
 
         if args.l:
-            printDetails(contents)
+            print_details(contents)
 
         else:
             contents = [item for item in contents]
