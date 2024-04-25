@@ -43,7 +43,7 @@ def path_contents(contents: list[dict], directory_path: str) -> list[dict]:
             contents_dict = {item['name']: item for item in contents}
         else:
             contents = [current_dir]
-    if len(path_list) > 1:
+    if len(path_list) > 1 and len(contents) == 1:
         contents[0]['name'] = './' + str(directory_path)
     
     return contents
