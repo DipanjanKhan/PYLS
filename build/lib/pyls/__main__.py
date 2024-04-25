@@ -52,7 +52,7 @@ def path_contents(contents, path_list):
     return new_contents
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument('directory', nargs='?',default='.', help="Show directory details")
     parser.add_argument('-A', action='store_true', help='Show all directory')
