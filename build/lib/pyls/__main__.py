@@ -46,7 +46,7 @@ def path_contents(contents, path_list):
     
     if len(new_contents) <0:
         return
-    if len(path_list) > 1:
+    if len(path_list) > 1 and len(contents) == 1:
         new_contents[0]['name'] = path
 
     return new_contents
